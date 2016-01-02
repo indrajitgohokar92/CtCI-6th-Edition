@@ -3,7 +3,7 @@ package Q1_03_URLify;
 import CtCILibrary.AssortedMethods;
 
 public class Question {
-	// Assume string has sufficient free space at the end
+	// Assume string has sufficient free space at the end of string
 	public static void replaceSpaces(char[] str, int length) {
 		int spaceCount = 0, index, i = 0;
 		for (i = 0; i < length; i++) {
@@ -11,6 +11,8 @@ public class Question {
 				spaceCount++;
 			}
 		}
+		
+		//Replace spaces with 02%
 		index = length + spaceCount * 2;
 		str[index] = '\0';
 		for (i = length - 1; i >= 0; i--) {
