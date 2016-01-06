@@ -29,6 +29,7 @@ public class QuestionB {
 			second.setPrevious(first);
 			first = second;
 		}
+		//Print the output
 		System.out.println(head.printForward());
 		deleteDups(head);
 	}
